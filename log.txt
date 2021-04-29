@@ -5,3 +5,9 @@ Author: Fernando Nogueira <mrfernando2509@gmail.com>
 Date:   Thu Apr 29 14:29:18 2021 -0400
 
     Clear log.txt
+
+commit f9059f6e67cdddd182ee3244c57c897d62b09377
+Author: Fernando Nogueira <mrfernando2509@gmail.com>
+Date:   Thu Apr 29 14:31:13 2021 -0400
+
+    Changed website title
