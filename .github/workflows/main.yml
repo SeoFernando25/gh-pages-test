@@ -22,5 +22,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           add: '.'
-          message: 'Added history chagne to file'
+          message: 'Updated log'
           branch: master
