@@ -1,0 +1,26 @@
+name: post
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  report-date:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Add commit date and message to file
+        run: echo "New commit at" $(git show -s --format=%ci) >> log.txt
+        run: echo "The dude said..." $(git show -s --format=%s) >> log.txt
+        run: echo "" >> log.txt
+
+    - name: Commit action changes
+          uses: EndBug/add-and-commit@v7.1.0
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            add: '.'
+            message: 'Added history chagne to file'
+            branch: master
