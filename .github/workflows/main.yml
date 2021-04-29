@@ -13,7 +13,7 @@ jobs:
 
       - name: Add commit date and message to file
         run: |
-          echo $(git show -s) >> log.txt |
+          git show -s >> log.txt |
           echo "" >> log.txt
 
       - name: Commit action changes
