@@ -13,8 +13,7 @@ jobs:
 
       - name: Add commit date and message to file
         run: |
-          git show -s >> log.txt |
-          echo "" >> log.txt
+          git show --pretty=oneline >> log.txt
 
       - name: Commit action changes
         uses: EndBug/add-and-commit@v7.1.0
